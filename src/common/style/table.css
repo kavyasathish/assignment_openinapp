@@ -1,16 +1,22 @@
 .custom-table {
   border-collapse: separate;
-  width: 1065px;
-  height: 419px;
+  width: 100%;
+  /* height: 419px; */
   border-spacing: 0 10px;
   background-color: #f5f5f5;
   padding: 20px;
+  margin: 0 auto;
 }
-
+@media (max-width: 768px) {
+  .custom-table th,
+  .custom-table td {
+    font-size: 12px;
+  }
+}
 
 .custom-table th,
 .custom-table td {
-  padding: 10px 20px; 
+  padding: 10px 20px;
   text-align: left;
   height: 30px;
   width: 200px;
@@ -19,21 +25,21 @@
 
 .custom-table th:first-child,
 .custom-table td:first-child {
-  border-top-left-radius: 15px; 
+  border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   padding-left: 30px;
 }
 
 .custom-table th:last-child,
 .custom-table td:last-child {
-  border-top-right-radius: 15px; 
-  border-bottom-right-radius: 15px; 
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   padding-right: 30px;
 }
 
 .custom-table th:nth-child(5),
 .custom-table td:nth-child(5) {
-  width: 300px; 
+  width: 300px;
 }
 .custom-table tbody tr:nth-child(even) {
   background-color: #fff;
